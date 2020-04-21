@@ -10,7 +10,7 @@ function preload() {
   mySound = loadSound('oof.wav');
 }
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(1400, 800);
 
   //make one avatar called me
   me = new Avatar(width/2, 300, 3);
@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw(){
-	background(0);
+	background(97, 192, 255);
 
   me.drawMe();
   me.moveMe();
@@ -36,11 +36,7 @@ function draw(){
         	balls[i].bounceBall();
 	  }
 {
-  fill("white");
-ellipse(100,70,100,100);
 
-fill(0);
-ellipse(120,70,100,100);
 }
 }
 
@@ -52,13 +48,13 @@ class Avatar {
     		this.y = y;
         this.speed = speed;
 	}
-
-	drawMe(){  // draw the running person
+  drawMe(){  // draw the running person
     		stroke("white");
         strokeWeight(5);
     		fill("white");
 		    rect(this.x,this.y,40,5)
         rect(this.x+17.5,this.y-17.5,5,40)
+
 
 	}
 
@@ -95,7 +91,7 @@ class Ball {
 	}
 
 	// draw a ball on the screen at x,y
-	drawBall(){
+  drawBall(){
     	stroke(0);
       strokeWeight(0);
     	fill(252, 255, 59);
