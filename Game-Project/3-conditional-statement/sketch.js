@@ -10,7 +10,7 @@ function preload() {
   mySound = loadSound('oof.wav');
 }
 function setup() {
-  createCanvas(1400, 800);
+  createCanvas(1400, 820);
 
   //make one avatar called me
   me = new Avatar(width/2, 300, 3);
@@ -35,9 +35,29 @@ function draw(){
        	  balls[i].moveBall();
         	balls[i].bounceBall();
 	  }
-{
+      fill(171, 171, 171)
+      ellipse(0,900,250)
+      fill(97,97,97)
+      ellipse(200,900,250)
+      fill(171, 171, 171)
+      ellipse(400,900,250)
+      fill(97,97,97)
+      ellipse(600,900,250)
+      fill(171, 171, 171)
+      ellipse(800,900,250)
+      fill(97,97,97)
+      ellipse(1000,900,250)
+      fill(171, 171, 171)
+      ellipse(1200,900,250)
+      fill(97,97,97)
+      ellipse(1400,900,250)
+      fill(171, 171, 171)
+      ellipse(1600,900,250)
 
-}
+      
+
+
+
 }
 
 //avatar class
@@ -80,6 +100,7 @@ class Avatar {
 }
 
 
+
 //ball class from which to create new balls with similar properties.
 class Ball {
 
@@ -95,8 +116,10 @@ class Ball {
     	stroke(0);
       strokeWeight(0);
     	fill(252, 255, 59);
-		  rect(this.x,this.y,30,10);
+		  ellipse(this.x,this.y,30,30);
 	}
+
+
 
 	//update the location of the ball, so it moves across the screen
 	moveBall(){
