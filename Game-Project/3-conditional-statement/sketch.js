@@ -15,7 +15,19 @@ function setup() {
   //make one avatar called me
   me = new Avatar(width/2, 300, 3);
 
+  stroke(0);
+  frameRate(1);
+  textSize(20);
+  textSize(30);
+  textAlign(CENTER);
+
 }
+
+
+
+
+
+
 
 function draw(){
 	background(97, 192, 255);
@@ -54,8 +66,11 @@ function draw(){
       fill(171, 171, 171)
       ellipse(1600,900,250)
 
-      
 
+      if (frameCount <= 60){
+          rect(25,25, 100,100);
+          text(frameCount, 75, 80);
+          }
 
 
 }
