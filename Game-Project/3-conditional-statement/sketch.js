@@ -15,11 +15,7 @@ function setup() {
   //make one avatar called me
   me = new Avatar(width/2, 300, 3);
 
-  stroke(0);
-  frameRate(1);
-  textSize(20);
-  textSize(30);
-  textAlign(CENTER);
+
 
 }
 
@@ -65,13 +61,6 @@ function draw(){
       ellipse(1400,900,250)
       fill(171, 171, 171)
       ellipse(1600,900,250)
-
-
-      if (frameCount <= 60){
-          rect(25,25, 100,100);
-          text(frameCount, 75, 80);
-          }
-
 
 }
 
@@ -130,8 +119,8 @@ class Ball {
   drawBall(){
     	stroke(0);
       strokeWeight(0);
-    	fill(252, 255, 59);
-		  ellipse(this.x,this.y,30,30);
+    	fill(160,82,45);
+		  ellipse(this.x,this.y,15,15);
 	}
 
 
