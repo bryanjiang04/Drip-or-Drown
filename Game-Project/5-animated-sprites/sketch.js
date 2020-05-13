@@ -10,7 +10,7 @@ function preload() {
 //
 //   //create an animation from a sequence of numbered images
 //   //pass the first and the last file name and it will try to find the ones in between
-  sprites = loadAnimation('sprites/rockstar001.png', 'sprites/rockstar002.png', 'sprites/rockstar003.png', 'sprites/rockstar005.png', 'sprites/rockstar006.png', 'sprites/rockstar007.png');
+  sprites = loadAnimation('sprites/goldstar.png');
 
 }
 
@@ -23,6 +23,6 @@ function draw() {
 
   //specify the animation instance and its x,y position
   //animation() will update the animation frame as well
-  animation(sprites, 300, 300);
+  animation(sprites, 500,500);
 
 }
