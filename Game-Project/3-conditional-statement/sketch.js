@@ -15,8 +15,6 @@ function setup() {
   //make one avatar called me
   me = new Avatar(width/2, 300, 3);
 
-
-
 }
 
 
@@ -62,6 +60,24 @@ function draw(){
       fill(171, 171, 171)
       ellipse(1600,900,250)
 
+      {
+      var sprites;
+      function preload() {
+        sprites = loadAnimation('sprites/drip001.png', 'sprites/rockstar008.png');
+
+      }
+
+      //function setup() {
+      //  createCanvas(800, 600);
+      //}
+
+      //function draw() {
+      //  background(200, 255, 255);
+
+        //specify the animation instance and its x,y position
+        //animation() will update the animation frame as well
+        animation(sprites, 300, 300);
+      }
 }
 
 //avatar class
@@ -73,11 +89,11 @@ class Avatar {
         this.speed = speed;
 	}
   drawMe(){  // draw the running person
-    		stroke("white");
-        strokeWeight(5);
-    		fill("white");
-		    rect(this.x,this.y,40,5)
-        rect(this.x+17.5,this.y-17.5,5,40)
+    stroke("white");
+    strokeWeight(5);
+    fill("white");
+    rect(this.x,this.y,40,5)
+    rect(this.x+17.5,this.y-17.5,5,40)
 
 
 	}
@@ -140,23 +156,5 @@ class Ball {
     		}
   	}
 
-
-}
-var sprites;
-function preload() {
-  sprites = loadAnimation('sprites/drip001.png', 'sprites/rockstar008.png');
-
-}
-
-//function setup() {
-//  createCanvas(800, 600);
-//}
-
-//function draw() {
-//  background(200, 255, 255);
-
-  //specify the animation instance and its x,y position
-  //animation() will update the animation frame as well
-  animation(sprites, 300, 300);
 
 }
