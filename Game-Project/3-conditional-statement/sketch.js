@@ -142,3 +142,21 @@ class Ball {
 
 
 }
+var sprites;
+function preload() {
+  sprites = loadAnimation('sprites/drip001.png', 'sprites/rockstar008.png');
+
+}
+
+//function setup() {
+//  createCanvas(800, 600);
+//}
+
+//function draw() {
+//  background(200, 255, 255);
+
+  //specify the animation instance and its x,y position
+  //animation() will update the animation frame as well
+  animation(sprites, 300, 300);
+
+}
